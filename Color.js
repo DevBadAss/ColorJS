@@ -1,9 +1,25 @@
+/**
+ * @author Olawoore Emmanuel Collins
+ */
+
 class Color {
     constructor() {}
 
+
+    /**
+     * 
+     * @returns random color code
+     */
     random() {
         return "#" + Math.floor(Math.random() * 16777215).toString(16)
     }
+
+    /**
+     * Lightens and Darkens color
+     * @param {String} col  color code
+     * @param {Number} amt amount to lighten or darken by. Maximum value is 255
+     * @returns  lightened or darkened color code
+     */
 
     new_shade(col, amt) {
         this.usePound = false;
@@ -41,6 +57,13 @@ class Color {
         return (this.usePound ? "#" : "") + (this.g | (this.b << 8) | (this.r << 16)).toString(16);
 
     }
+
+    /**
+     * Generates a parallel linear-gradient background
+     * @param {
+     } colObj 
+     * @returns backgroundColor, backgroundImage and backgroundSize
+     */
 
     parallel(colObj = {
         angle,
