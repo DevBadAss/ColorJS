@@ -18,19 +18,19 @@ import Color from '{main-directory}/ColorJS/Color.js';
 const color = new Color();
 ```
 
-# Generate random colors
+### Generate random colors
 ```javascript
  setInterval(() => {
      document.body.style.backgroundColor = olor.random();
  }, 1000);
 ```
 
-# Lighten color
+### Lighten color
 ```javascript
  const new_color_code = color.new_shade("#fff", 50);
 ```
 
-# Darkens color
+### Darkens color
 ```javascript
  const new_color_code = color.new_shade("#fff", -50;
 ```
